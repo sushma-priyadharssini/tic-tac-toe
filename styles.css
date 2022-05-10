@@ -1,0 +1,45 @@
+body {
+	overflow: hidden;
+}
+#body-content {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+}
+
+#body-content ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+}
+ul li {
+	border: 1px solid black;
+	width: 50px;
+	height: 50px;
+}
+
+.X {
+	content: 'X';
+	background-color: red;
+}
+
+.O {
+	content: 'X';
+	background-color: greenyellow;
+}
+
+.disable-board {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgb(0, 0, 0, .2);
+	display: none;
+	z-index: 1001;
+}
+
+.is-faded-out {
+	display: block;
+}
